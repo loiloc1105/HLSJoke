@@ -79,7 +79,7 @@ const App = () => {
       // console.log(JSON.parse(value));
       if (value !== null) {
         setData(value);
-        console.log(value);
+        // console.log(value);
       }
     } catch (error) {
       // Error retrieving data
@@ -174,7 +174,7 @@ const App = () => {
           for any loss or damage which may arise from reliance on the
           information contained on this site.
         </Text>
-        <Text>Copyright 2021 HLS</Text>
+        <Text style={{color: 'black'}}>Copyright 2021 HLS</Text>
       </View>
     </View>
   );
