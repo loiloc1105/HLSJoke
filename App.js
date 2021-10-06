@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
   },
   title: {
     height: height * 0.15,
-    paddingTop: height * 0.04,
+    paddingTop: Platform.OS === 'android' ? height * 0.04 : height * 0.05,
     justifyContent: 'space-between',
     flexDirection: 'row',
     width: width * 0.9,
@@ -231,7 +231,7 @@ const styles = StyleSheet.create({
     color: 'white',
   },
   content: {
-    height: Platform.OS === 'ios' ? height * 0.4 : height * 0.45,
+    height: height * 0.45,
     // borderWidth: 1,
     borderBottomWidth: 0.8,
     borderColor: 'gray',
